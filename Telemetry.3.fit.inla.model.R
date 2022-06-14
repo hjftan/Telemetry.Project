@@ -99,7 +99,7 @@ cmp.time <- ~
   idv.smooth(main = idate, model = mat1D.idate.temp,
              group = index.id, ngroup = max(all.data$index.id),
              control.group = list(model = "iid")) +
-  #individual based temporal effect with a integrate to zero constaint
+  #individual based temporal effect 
   riv.cov(cent.sq.riv, model = "linear", scale.model = FALSE, mean.linear = 0, prec.linear = 1) +
   con.cov(cent.sq.dis.con, model = "linear", scale.model = FALSE, mean.linear = 0, prec.linear = 1) +
   sst.cov(cent.sst, model = "linear", scale.model = FALSE, mean.linear = 0, prec.linear = 1) +
